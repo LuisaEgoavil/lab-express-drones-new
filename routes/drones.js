@@ -35,6 +35,16 @@ router.post('/drones/create', (req, res, next) => {
         propellers: myNumPropellers,
         maxSpeed: myNumSpeed
   }
+//REDIRECT
+
+      DroneModel.create(myNewDrone)
+          .then(()=>{
+               res.redirect('/drones')
+          })
+          .catch(()=>{
+               console.log('something went wrong')
+          })
+
 
 });
 
@@ -52,5 +62,9 @@ router.post('/drones/:id/delete', (req, res, next) => {
   // Iteration #5: Delete the drone
   // ... your code here
 });
+
+
+//PATH redirect
+
 
 module.exports = router;
