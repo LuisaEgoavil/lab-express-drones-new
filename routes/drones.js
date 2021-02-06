@@ -76,7 +76,7 @@ router.post('/drones/:id/edit', (req, res, next) => {
   }
 
   DroneModel.findByIdAndUpdate(id, editedDrone)
-      .the(()=>{
+      .then(()=>{
              res.redirect('/drones')
       })
       .catch(()=>{
