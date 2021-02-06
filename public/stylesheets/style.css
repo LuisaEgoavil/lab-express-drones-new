@@ -2,7 +2,37 @@ body {
   padding: 50px;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
-
 a {
   color: #00b7ff;
+}
+.title {
+   font-size: 100px;
+   text-align: center;
+}
+.subtitle {
+  font-size: 30px;
+  text-align: center;
+}
+.nav {
+  display: flexbox;
+  flex-direction: row;
+  justify-content: center;
+}
+.h2 {
+  color: grey;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+}
+.btn-sm {
+  width: 25%;
+  background-color: rgb(96, 137, 225);
+  border-color: white;
+}
+.btn-sm:hover {
+  background-color: rgba(96, 137, 225, 50%);
+}
+.infodrone{
+  color: black;
+  text-decoration: none;
 }
