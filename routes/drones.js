@@ -20,7 +20,7 @@ router.get('/drones', (req, res, next) => {
 //GET
 router.get('/drones/create', (req, res, next) => {
   // Iteration #3: Add a new drone
-  res.render('create-form.hbs')
+  res.render('drones/create-form.hbs')
 });
 
 
